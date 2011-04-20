@@ -580,6 +580,10 @@ jQuery.extend({
 		return elem.nodeName && elem.nodeName.toUpperCase() === name.toUpperCase();
 	},
 
+	inputType: function( elem ) {
+		return jQuery.nodeName( elem, "input" ) ? elem.type : "";;
+	},
+
 	// args is for internal usage only
 	each: function( object, callback, args ) {
 		var name, i = 0,
